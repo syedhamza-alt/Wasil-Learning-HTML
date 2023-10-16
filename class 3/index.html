@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+            background-color: #000;
+            color: #fff;
+        }
+
+        header{
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 12%;
+            
+            background-color: #303030;
+
+            border-bottom: #000 2px solid;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 0 10%;
+            padding: 5% 5%;
+
+            background-color: #303030;
+
+            border-radius: 5px;
+        }
+
+        .img{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img{
+            width: 400px;
+            height: 400px;
+
+            /* margin-right: 5%; */
+        }
+
+        .img p{
+            width: 400px;
+            height: 400px;
+
+            /* margin-left: 5%; */
+        }
+
+        p{
+            width: 100%;
+            height: 100%;
+
+            margin: 5%;
+        }
+
+        input{
+            width: 300px;
+            height: 30px;
+
+            border: none;
+            border-radius: 10px;
+
+            padding: 0 5px;
+        }
+
+        button{
+            width: 30px;
+            height: 30px;
+
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            background-color: #303030;
+            color: #fff;
+        }
+
+        button:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+
+    <script>
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CWC</h1>
+        <form method="post" action="">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit" name="submit" onclick="">S</button>
+        </form>
+
+    </header>
+    <div class="main">
+        <div class="img">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimage&psig=AOvVaw181NZ3wVUR6kD0WNZ_CByU&ust=1697562109592000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjJ7uiF-4EDFQAAAAAdAAAAABAE" alt="">
+            <p id="text">
+                The Cricket World Cup 2023, hosted by cricket-loving India, proved to be a spectacular 
+                event that captivated fans worldwide. The tournament featured 10 teams, blending cricket 
+                powerhouses like Indiaustralia, England, and Pakistan with emerging talents like Afghanistan 
+                and Ireland. The diversity of playing styles and the passion of the fans made every match 
+                a must-watch, turning cricket grounds across India into vibrant cauldrons of excitement. 
+                Throughout the tournament, we witnessed remarkable individual performances, with players 
+                like Virat Kohli, Kane Williamson, and Rashid Khan showcasing their exceptional skills. The 
+                group stage matches were filled with surprises as underdog teams upset the favorites, adding 
+                an element of unpredictability to the competition. As the tournament progressed to the Super 8 
+                stage, the intensity reached new heights, with the top eight teams battling fiercely for a 
+                coveted spot in the semi-finals.
+            </p>
+        </div>
+        <p id="text">
+            The Cricket World Cup 2023, hosted by cricket-loving India, proved to be a spectacular 
+            event that captivated fans worldwide. The tournament featured 10 teams, blending cricket 
+            powerhouses like India, Australia, England, and Pakistan with emerging talents like Afghanistan 
+            and Ireland. The diversity of playing styles and the passion of the fans made every match 
+            a must-watch, turning cricket grounds across India into vibrant cauldrons of excitement. 
+            Throughout the tournament, we witnessed remarkable individual performances, with players 
+            like Virat Kohli, Kane Williamson, and Rashid Khan showcasing their exceptional skills. The 
+            group stage matches were filled with surprises as underdog teams upset the favorites, adding 
+            an element of unpredictability to the competition. As the tournament progressed to the Super 8 
+            stage, the intensity reached new heights, with the top eight teams battling fiercely for a 
+            coveted spot in the semi-finals.
+        </p>
+    </div>
+
+    <p id="wordCount">Word count: <span id="count">0</span></p>
+
+    <script>
+        // Get the <p> element with the text
+        const textElement = document.getElementById('text');
+
+        // Get the <span> element to display the word count
+        const countElement = document.getElementById('count');
+
+        // Function to count words
+        function countWords() {
+            const text = textElement.textContent || textElement.innerText;
+            const words = text.split(/\s+/).filter(word => word !== '');
+            return words.length;
+        }
+
+        // Update the word count when the page loads
+        countElement.textContent = countWords();
+
+        // Listen for changes in the <p> element's content
+        textElement.addEventListener('input', function () {
+            countElement.textContent = countWords();
+        });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a{
+            padding: 10px;
+        } */
+    </style>
+    <link rel="stylesheet" href="./try.css">
+</head>
+<body>
+    <div style="background-color: black; height: 50px; color: aliceblue; margin:20px; padding: 50px;" class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a style= "color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px; margin: 10px; margin-left: 20px;"#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div> 
+      <div style="display: flex;">
+        <div style="border: 20px solid gray; border-radius: 100px;">
+        <img style="border-radius: 300px;" src="./Hassan_profile.jpg" alt="">
+        </div>
+        <div style="margin: 10px; width: 500px; height: 500px;overflow: hidden;"><p>The Cricket World Cup 2023, hosted by cricket-loving India, proved to be a spectacular 
+            event that captivated fans worldwide. The tournament featured 10 teams, blending cricket 
+            powerhouses like Indiaustralia, England, and Pakistan with emerging talents like Afghanistan 
+            and Ireland. The diversity of playing styles and the passion of the fans made every match 
+            a must-watch, turning cricket grounds across India into vibrant cauldrons of excitement. 
+            Throughout the tournament, we witnessed remarkable individual performances, with players 
+            like Virat Kohli, Kane Williamson, and Rashid Khan showcasing their exceptional skills. The 
+            group stage matches were filled with surprises as underdog teams upset the favorites, adding 
+            an element of unpredictability to the competition. As the tournament progressed to the Super 8 
+            stage, the intensity reached new heights, with the top eight teams battling fiercely for a 
+            coveted spot in the semi-finals</p></div>
+
+      </div>
+</body>
+</html>
